@@ -168,11 +168,18 @@ if (index[pre_last_cycle]) {
     const pre_ranking = index[pre_last_cycle].ranking;
     for (const player of ranking.ranking) {
         const playerClass = _.sortBy(getPlayerClass(pre_ranking, player), "api_rate");
-        if (playerClass.length === 1) {
-            player.api_no_diff = player.api_no - playerClass[0].api_no;
+        if (playerClass.length === 0) {
+            // player.jump_in = true;
+        } else if (playerClass.length === 1) {
+            player.api_no_diff = playerClass[0].api_no - player.api_no;
             player.api_rate_diff = player.api_rate - playerClass[0].api_rate;
         } else {
-            // TODO: name conflicts
+            const closestPlayer = playerClass.reduce((prev, curr) =>
+                Math.abs(curr.api_rate - player.api_rate) < Math.abs(prev.api_rate - player.api_rate) ? curr : prev
+            );
+            player.api_no_diff = closestPlayer.api_no - player.api_no;
+            player.api_rate_diff = player.api_rate - closestPlayer.api_rate;
+            player.diff_guess = true;
         }
     }
 }
