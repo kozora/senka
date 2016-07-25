@@ -3,7 +3,7 @@ Experimentations on [senka.me](https://www.senka.me/) reimplementation. [gakada.
   * Saiki Bay
   * Hashirajima (soon™)
   * In theory, other servers also can be added
-* A semi-automatic way of updating from KCV and EO (soon™) logs is implemented, automatic submission isn't implemented and not planned
+* A semi-automatic way of updating from KCV and EO (soon™) logs is implemented, automatic submission isn't implemented yet
 * Implemented features (see What section): server Top N graphs and Top 990 ranking tables
 
 # Why
