@@ -1,0 +1,53 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Ranking Data</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="./styles/main.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+<div class="container">
+<div class="navbar-header">
+<a class="navbar-brand" href="/">Top</a>
+<ul class="nav navbar-nav">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Saiki Bay<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li class="active"><a href="/server/19">Saiki Bay</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Ranking<span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li><a href="/saiki.html">Overview</a></li>
+<li class="active"><a href="/saiki_ranking.html">Ranking</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<article class="container">
+<header class="page-header row">
+<h1>Saiki Bay <small id="last-update-date"></small></h1>
+</header>
+<table id="ranking-table" class="table table-bordered table-striped table-condensed table-hover">
+<thead>
+<tr>
+<th>Place</th>
+<th>Name</th>
+<th>Comment</th>
+<th>Points</th>
+<th>Medals</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</article>
+
+<script src="./scripts/ranking.js"></script>

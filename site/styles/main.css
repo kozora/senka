@@ -1,0 +1,25 @@
+
+pre {
+    background-color: inherit;
+    border: 0px;
+}
+
+.blue {
+    color:#337ab7
+}
+
+.green {
+    color:#468847
+}
+
+.red {
+    color:#b13f3c
+}
+
+.gray {
+    color:#999
+}
+
+.bold {
+    font-weight:bold
+}
