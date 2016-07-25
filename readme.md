@@ -1,4 +1,4 @@
-Experimentations on [senka.me](https://www.senka.me/) reimplementation.
+Experimentations on [senka.me](https://www.senka.me/) reimplementation. [gakada.github.io/senka](https://gakada.github.io/senka/)
 * Supported servers:
   * Saiki Bay
   * Hashirajima (soon™)
