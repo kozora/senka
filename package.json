@@ -1,9 +1,0 @@
-{
-  "name": "senka",
-  "version": "0.1.0",
-  "description": "KanColle Ranking Data Site",
-  "private": true,
-  "dependencies": {
-    "lodash": "^4.14.0"
-  }
-}
