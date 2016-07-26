@@ -1,6 +1,8 @@
 $(function() {
 
-$.getJSON("index/server/19/overview.json", (data) => {
+let server = $(".server-overview-article").data("server");
+
+$.getJSON(`index/server/${server}/overview.json`, (data) => {
 
     $("#last-update-date").text(`(${data.last_update_date})`);
 
