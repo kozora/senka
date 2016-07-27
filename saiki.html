@@ -1,5 +1,9 @@
 <!doctype html>
+
 <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Ranking Data :: Saiki Overview</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -7,11 +11,22 @@
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script src="./scripts/overview.js"></script>
 
 <nav class="navbar navbar-default navbar-fixed-top">
 <div class="container">
 <div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">#</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
 <a class="navbar-brand" href="./">Top</a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav">
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Saiki Bay<span class="caret"></span></a>
@@ -33,8 +48,11 @@
 </nav>
 
 <article class="container server-overview-article" data-server="19">
+
 <header class="page-header row">
-<h1>Saiki Bay Anchorage <small id="last-update-date"></small></h1>
+<h1>Saiki Bay Anchorage <small id="last-update-date"></small>
+<a style="float:right;" href="./saiki_ranking.html">&rarr; Ranking</a>
+</h1>
 </header>
 
 <ul>
@@ -45,7 +63,5 @@
 <section>
 <div id="overview-chart" style="width:100%; height:600px;"></div>
 </section>
-</article>
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="./scripts/overview.js"></script>
+</article>

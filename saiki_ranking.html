@@ -1,5 +1,9 @@
 <!doctype html>
+
 <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Ranking Data :: Saiki Ranking Table</title>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -11,10 +15,20 @@
 <script src="./scripts/moment.min.js"></script>
 <script src="./scripts/bootstrap-sortable.js"></script>
 
+<script src="./scripts/ranking.js"></script>
+
 <nav class="navbar navbar-default navbar-fixed-top">
 <div class="container">
 <div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<span class="sr-only">#</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
 <a class="navbar-brand" href="./">Top</a>
+</div>
+<div id="navbar" class="navbar-collapse collapse">
 <ul class="nav navbar-nav">
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Saiki Bay<span class="caret"></span></a>
@@ -36,8 +50,11 @@
 </nav>
 
 <article class="container server-ranking-article" data-server="19">
+
 <header class="page-header row">
-<h1>Saiki Bay Anchorage <small id="last-update-date"></small></h1>
+<h1>Saiki Bay Anchorage <small id="last-update-date"></small>
+<a style="float:right;" href="./saiki.html">&rarr; Overview</a>
+</h1>
 </header>
 
 <h3>
@@ -47,6 +64,7 @@ Overview <span class="caret"></span>
 </h3>
 
 <div class="collapse" id="collapseArea">
+
 <table id="top-table" class="table table-bordered table-condensed">
 <thead>
 <tr>
@@ -63,12 +81,14 @@ Overview <span class="caret"></span>
 <tbody>
 </tbody>
 </table>
+
 <table id="increment-table" class="table table-bordered table-condensed">
 <thead>
 </thead>
 <tbody>
 </tbody>
 </table>
+
 <table id="medal-table" class="table table-bordered table-condensed">
 <thead>
 <tr>
@@ -108,6 +128,5 @@ Overview <span class="caret"></span>
 <tbody>
 </tbody>
 </table>
-</article>
 
-<script src="./scripts/ranking.js"></script>
+</article>
