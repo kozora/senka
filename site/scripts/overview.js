@@ -1,12 +1,15 @@
 $(function() {
 
-$.getJSON("index/server/19/overview.json", (data) => {
+let server = $(".server-overview-article").data("server");
+
+$.getJSON(`index/server/${server}/overview.json`, (data) => {
 
     $("#last-update-date").text(`(${data.last_update_date})`);
 
     $('#overview-chart').highcharts({
         chart: { type: 'spline' },
         title: null,
+        legend: { verticalAlign: "top" },
         tooltip: { crosshairs: true, shared: true },
         plotOptions: { spline: { marker: { radius: 3, lineColor: '#666666', lineWidth: 1 } } },
         series: [
