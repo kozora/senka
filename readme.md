@@ -13,6 +13,7 @@
 ### Implemented features
 
 * Top 1/5/20/100/500 graphs for servers ([example](https://gakada.github.io/senka/saiki.html))
+  * Previous months graphs will be preserved
 * Sortable ranking tables for servers (top 990 on one page), with stats for current top 1/5/10/20/50/100/500/990 points, increments, and medals ([example](https://gakada.github.io/senka/saiki_ranking.html))
 
 ### Roadmap
@@ -25,7 +26,7 @@
 * Support Iwagawa
   * etc.
 * Overview for current top 1/2/3/4/5/10/15/20/50/100/500/990 points with highlighting for servers
-  * A page with highlighted end-month tables for all servers for each month ([example](https://twitter.com/yoru02_rbul/status/748485998590341120))
+  * A page with highlighted end-month tables for all servers for each month (starting from September 2015) ([example](https://twitter.com/yoru02_rbul/status/748485998590341120))
 * Average increments charts for servers
 * Implement player pages: info, comments, place and points graphs, increment history, average increments
   * Start with a few players
