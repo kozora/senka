@@ -45,9 +45,12 @@ $.getJSON(`index/server/${server}/ranking.json`, function(data) {
         `<tr>${data.top.map((e) => `<td>${e}</td>`).join("")}</tr>`
     );
 
+    $("#medal-table thead").append(
+        `<tr>${data.medals.map((e) => `<th>甲<sub class="bold">${e[0]}</sub></th>`).join("")}</tr>`
+    );
     $("#medal-table tbody").append(
-        `<tr>${data.medals.map((e) => `<td>${e}</td>`).join("")}</tr>` +
-        `<tr>${data.medals.map((e) => `<td>${(100 * (e / data.users).toFixed(4)).toFixed(2)}%</td>`).join("")}</tr>`
+        `<tr>${data.medals.map((e) => `<td>${e[1]}</td>`).join("")}</tr>` +
+        `<tr>${data.medals.map((e) => `<td>${(100 * (e[1] / data.users).toFixed(4)).toFixed(2)}%</td>`).join("")}</tr>`
     );
 
     $("#increment-table thead").append(

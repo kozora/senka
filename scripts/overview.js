@@ -12,6 +12,9 @@ $.getJSON(`index/server/${server}/overview.json`, (data) => {
         legend: { verticalAlign: "top" },
         tooltip: { crosshairs: true, shared: true },
         plotOptions: { spline: { marker: { radius: 3, lineColor: '#666666', lineWidth: 1 } } },
+        xAxis: {
+            tickInterval: 0.5,
+        },
         series: [
             { name: 'Top 1', marker: { symbol: 'circle' }, data: data.top1, color: "#B71C1C" },
             { name: 'Top 5', marker: { symbol: 'circle' }, data: data.top5, color: "#E65100" },
